@@ -37,11 +37,30 @@ jobs:
         Write-Host "Coverage file found at: $($coverageFile.FullName)"
         $coverageJson = Get-Content $coverageFile.FullName -Raw | ConvertFrom-Json
         Write-Host "Raw coverage data: $($coverageJson | ConvertTo-Json -Depth 10)"
-        $coverage = [double]($coverageJson.summary.line)
-        Write-Host "Coverage percentage: $coverage%"
+        
+        # Calculate total lines and covered lines
+        $totalLines = 0
+        $coveredLines = 0
+        
+        foreach ($file in $coverageJson."PdfQrApiSharp.dll".PSObject.Properties) {
+            foreach ($class in $file.Value.PSObject.Properties) {
+                foreach ($method in $class.Value.PSObject.Properties) {
+                    foreach ($line in $method.Value.Lines.PSObject.Properties) {
+                        $totalLines++
+                        if ($line.Value -gt 0) {
+                            $coveredLines++
+                        }
+                    }
+                }
+            }
+        }
+        
+        $coverage = if ($totalLines -gt 0) { [math]::Round(($coveredLines / $totalLines) * 100, 2) } else { 0 }
+        Write-Host "Coverage percentage: $coverage% (Covered: $coveredLines, Total: $totalLines)"
+        
         if ($coverage -lt 95) {
-          Write-Error "Test coverage ($coverage%) is below the required 95% threshold"
-          exit 1
+            Write-Error "Test coverage ($coverage%) is below the required 95% threshold"
+            exit 1
         }
       shell: pwsh
       
