@@ -35,9 +35,10 @@ jobs:
           exit 1
         }
         Write-Host "Coverage file found at: $($coverageFile.FullName)"
-        $coverageJson = Get-Content $coverageFile.FullName | ConvertFrom-Json
-        Write-Host "Coverage summary: $($coverageJson.summary | ConvertTo-Json)"
-        $coverage = $coverageJson.summary.line
+        $coverageJson = Get-Content $coverageFile.FullName -Raw | ConvertFrom-Json
+        Write-Host "Raw coverage data: $($coverageJson | ConvertTo-Json -Depth 10)"
+        $coverage = [double]($coverageJson.summary.line)
+        Write-Host "Coverage percentage: $coverage%"
         if ($coverage -lt 95) {
           Write-Error "Test coverage ($coverage%) is below the required 95% threshold"
           exit 1
