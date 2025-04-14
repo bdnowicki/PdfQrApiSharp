@@ -1,0 +1,292 @@
+{
+  "PdfQrApiSharp.dll": {
+    "C:\\Users\\BartoszNowicki\\source\\repos\\PdfQrApiSharp\\src\\Services\\PdfQrService.cs": {
+      "PdfQrApiSharp.Services.PdfQrService": {
+        "System.Void PdfQrApiSharp.Services.PdfQrService::Dispose()": {
+          "Lines": {
+            "79": 16,
+            "80": 16,
+            "81": 16,
+            "82": 16
+          },
+          "Branches": []
+        },
+        "System.Void PdfQrApiSharp.Services.PdfQrService::Dispose(System.Boolean)": {
+          "Lines": {
+            "85": 16,
+            "86": 16,
+            "87": 15,
+            "88": 15,
+            "89": 15,
+            "90": 15,
+            "91": 15,
+            "92": 15,
+            "93": 15,
+            "94": 16
+          },
+          "Branches": [
+            {
+              "Line": 86,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 15
+            },
+            {
+              "Line": 88,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 15
+            },
+            {
+              "Line": 88,
+              "Offset": 18,
+              "EndOffset": 34,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 15
+            },
+            {
+              "Line": 86,
+              "Offset": 12,
+              "EndOffset": 42,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 16
+            }
+          ]
+        },
+        "System.Void PdfQrApiSharp.Services.PdfQrService::.ctor(PdfQrApiSharp.Models.PdfQrApiConfig)": {
+          "Lines": {
+            "17": 15,
+            "18": 15,
+            "19": 15,
+            "20": 15,
+            "21": 15,
+            "22": 15,
+            "23": 15,
+            "24": 15
+          },
+          "Branches": [
+            {
+              "Line": 19,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 11,
+              "EndOffset": 19,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 15
+            }
+          ]
+        }
+      },
+      "PdfQrApiSharp.Services.PdfQrService/<AddQrToPdfAsync>d__4": {
+        "System.Void PdfQrApiSharp.Services.PdfQrService/<AddQrToPdfAsync>d__4::MoveNext()": {
+          "Lines": {
+            "27": 14,
+            "29": 14,
+            "30": 14,
+            "31": 3,
+            "32": 3,
+            "33": 3,
+            "34": 3,
+            "35": 3,
+            "36": 3,
+            "39": 11,
+            "42": 11,
+            "43": 11,
+            "44": 11,
+            "47": 11,
+            "49": 11,
+            "51": 9,
+            "52": 5,
+            "53": 5,
+            "54": 5,
+            "55": 5,
+            "56": 5,
+            "57": 5,
+            "58": 5,
+            "61": 4,
+            "62": 4,
+            "63": 4,
+            "64": 4,
+            "65": 4,
+            "66": 4,
+            "68": 2,
+            "69": 2,
+            "70": 2,
+            "71": 2,
+            "72": 2,
+            "73": 2,
+            "74": 2,
+            "76": 14
+          },
+          "Branches": [
+            {
+              "Line": 30,
+              "Offset": 32,
+              "EndOffset": 34,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 14
+            },
+            {
+              "Line": 30,
+              "Offset": 45,
+              "EndOffset": 47,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 13
+            },
+            {
+              "Line": 30,
+              "Offset": 59,
+              "EndOffset": 61,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 12
+            },
+            {
+              "Line": 30,
+              "Offset": 32,
+              "EndOffset": 79,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 30,
+              "Offset": 45,
+              "EndOffset": 79,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 30,
+              "Offset": 59,
+              "EndOffset": 79,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 2
+            },
+            {
+              "Line": 30,
+              "Offset": 82,
+              "EndOffset": 84,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 3
+            },
+            {
+              "Line": 30,
+              "Offset": 82,
+              "EndOffset": 116,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 11
+            },
+            {
+              "Line": 51,
+              "Offset": 449,
+              "EndOffset": 454,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 5
+            },
+            {
+              "Line": 51,
+              "Offset": 449,
+              "EndOffset": 647,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 4
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\BartoszNowicki\\source\\repos\\PdfQrApiSharp\\src\\Models\\PdfQrApiConfig.cs": {
+      "PdfQrApiSharp.Models.PdfQrApiConfig": {
+        "System.String PdfQrApiSharp.Models.PdfQrApiConfig::get_BaseUrl()": {
+          "Lines": {
+            "7": 41
+          },
+          "Branches": []
+        },
+        "System.String PdfQrApiSharp.Models.PdfQrApiConfig::get_ApiVersion()": {
+          "Lines": {
+            "8": 41
+          },
+          "Branches": []
+        },
+        "System.String PdfQrApiSharp.Models.PdfQrApiConfig::get_Endpoint()": {
+          "Lines": {
+            "9": 41
+          },
+          "Branches": []
+        },
+        "System.TimeSpan PdfQrApiSharp.Models.PdfQrApiConfig::get_Timeout()": {
+          "Lines": {
+            "10": 45
+          },
+          "Branches": []
+        },
+        "System.String PdfQrApiSharp.Models.PdfQrApiConfig::GetFullEndpoint()": {
+          "Lines": {
+            "12": 11
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\BartoszNowicki\\source\\repos\\PdfQrApiSharp\\src\\Models\\PdfQrRequest.cs": {
+      "PdfQrApiSharp.Models.PdfQrRequest": {
+        "System.Byte[] PdfQrApiSharp.Models.PdfQrRequest::get_PdfContent()": {
+          "Lines": {
+            "7": 52
+          },
+          "Branches": []
+        },
+        "System.String PdfQrApiSharp.Models.PdfQrRequest::get_QrContent()": {
+          "Lines": {
+            "8": 37
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\BartoszNowicki\\source\\repos\\PdfQrApiSharp\\src\\Models\\PdfQrResponse.cs": {
+      "PdfQrApiSharp.Models.PdfQrResponse": {
+        "System.Byte[] PdfQrApiSharp.Models.PdfQrResponse::get_ModifiedPdf()": {
+          "Lines": {
+            "7": 18
+          },
+          "Branches": []
+        },
+        "System.String PdfQrApiSharp.Models.PdfQrResponse::get_ErrorMessage()": {
+          "Lines": {
+            "8": 33
+          },
+          "Branches": []
+        },
+        "System.Boolean PdfQrApiSharp.Models.PdfQrResponse::get_Success()": {
+          "Lines": {
+            "9": 28
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+SF:C:\Users\BartoszNowicki\source\repos\PdfQrApiSharp\src\Services\PdfQrService.cs
+FN:78,System.Void PdfQrApiSharp.Services.PdfQrService::Dispose()
+FNDA:16,System.Void PdfQrApiSharp.Services.PdfQrService::Dispose()
+DA:79,16
+DA:80,16
+DA:81,16
+DA:82,16
+FN:84,System.Void PdfQrApiSharp.Services.PdfQrService::Dispose(System.Boolean)
+FNDA:16,System.Void PdfQrApiSharp.Services.PdfQrService::Dispose(System.Boolean)
+DA:85,16
+DA:86,16
+DA:87,15
+DA:88,15
+DA:89,15
+DA:90,15
+DA:91,15
+DA:92,15
+DA:93,15
+DA:94,16
+BRDA:86,12,0,15
+BRDA:88,18,0,15
+BRDA:88,18,1,15
+BRDA:86,12,1,16
+FN:16,System.Void PdfQrApiSharp.Services.PdfQrService::.ctor(PdfQrApiSharp.Models.PdfQrApiConfig)
+FNDA:15,System.Void PdfQrApiSharp.Services.PdfQrService::.ctor(PdfQrApiSharp.Models.PdfQrApiConfig)
+DA:17,15
+DA:18,15
+DA:19,15
+DA:20,15
+DA:21,15
+DA:22,15
+DA:23,15
+DA:24,15
+BRDA:19,11,0,0
+BRDA:19,11,1,15
+FN:26,System.Void PdfQrApiSharp.Services.PdfQrService/<AddQrToPdfAsync>d__4::MoveNext()
+FNDA:14,System.Void PdfQrApiSharp.Services.PdfQrService/<AddQrToPdfAsync>d__4::MoveNext()
+DA:27,14
+DA:29,14
+DA:30,14
+DA:31,3
+DA:32,3
+DA:33,3
+DA:34,3
+DA:35,3
+DA:36,3
+DA:39,11
+DA:42,11
+DA:43,11
+DA:44,11
+DA:47,11
+DA:49,11
+DA:51,9
+DA:52,5
+DA:53,5
+DA:54,5
+DA:55,5
+DA:56,5
+DA:57,5
+DA:58,5
+DA:61,4
+DA:62,4
+DA:63,4
+DA:64,4
+DA:65,4
+DA:66,4
+DA:68,2
+DA:69,2
+DA:70,2
+DA:71,2
+DA:72,2
+DA:73,2
+DA:74,2
+DA:76,14
+BRDA:30,32,0,14
+BRDA:30,45,0,13
+BRDA:30,59,0,12
+BRDA:30,32,1,2
+BRDA:30,45,1,2
+BRDA:30,59,1,2
+BRDA:30,82,0,3
+BRDA:30,82,1,11
+BRDA:51,449,0,5
+BRDA:51,449,1,4
+LF:59
+LH:59
+BRF:16
+BRH:15
+FNF:4
+FNH:4
+end_of_record
+SF:C:\Users\BartoszNowicki\source\repos\PdfQrApiSharp\src\Models\PdfQrApiConfig.cs
+FN:6,System.String PdfQrApiSharp.Models.PdfQrApiConfig::get_BaseUrl()
+FNDA:41,System.String PdfQrApiSharp.Models.PdfQrApiConfig::get_BaseUrl()
+DA:7,41
+FN:7,System.String PdfQrApiSharp.Models.PdfQrApiConfig::get_ApiVersion()
+FNDA:41,System.String PdfQrApiSharp.Models.PdfQrApiConfig::get_ApiVersion()
+DA:8,41
+FN:8,System.String PdfQrApiSharp.Models.PdfQrApiConfig::get_Endpoint()
+FNDA:41,System.String PdfQrApiSharp.Models.PdfQrApiConfig::get_Endpoint()
+DA:9,41
+FN:9,System.TimeSpan PdfQrApiSharp.Models.PdfQrApiConfig::get_Timeout()
+FNDA:45,System.TimeSpan PdfQrApiSharp.Models.PdfQrApiConfig::get_Timeout()
+DA:10,45
+FN:11,System.String PdfQrApiSharp.Models.PdfQrApiConfig::GetFullEndpoint()
+FNDA:11,System.String PdfQrApiSharp.Models.PdfQrApiConfig::GetFullEndpoint()
+DA:12,11
+LF:5
+LH:5
+BRF:0
+BRH:0
+FNF:5
+FNH:5
+end_of_record
+SF:C:\Users\BartoszNowicki\source\repos\PdfQrApiSharp\src\Models\PdfQrRequest.cs
+FN:6,System.Byte[] PdfQrApiSharp.Models.PdfQrRequest::get_PdfContent()
+FNDA:52,System.Byte[] PdfQrApiSharp.Models.PdfQrRequest::get_PdfContent()
+DA:7,52
+FN:7,System.String PdfQrApiSharp.Models.PdfQrRequest::get_QrContent()
+FNDA:37,System.String PdfQrApiSharp.Models.PdfQrRequest::get_QrContent()
+DA:8,37
+LF:2
+LH:2
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\BartoszNowicki\source\repos\PdfQrApiSharp\src\Models\PdfQrResponse.cs
+FN:6,System.Byte[] PdfQrApiSharp.Models.PdfQrResponse::get_ModifiedPdf()
+FNDA:18,System.Byte[] PdfQrApiSharp.Models.PdfQrResponse::get_ModifiedPdf()
+DA:7,18
+FN:7,System.String PdfQrApiSharp.Models.PdfQrResponse::get_ErrorMessage()
+FNDA:33,System.String PdfQrApiSharp.Models.PdfQrResponse::get_ErrorMessage()
+DA:8,33
+FN:8,System.Boolean PdfQrApiSharp.Models.PdfQrResponse::get_Success()
+FNDA:28,System.Boolean PdfQrApiSharp.Models.PdfQrResponse::get_Success()
+DA:9,28
+LF:3
+LH:3
+BRF:0
+BRH:0
+FNF:3
+FNH:3
+end_of_record
