@@ -35,10 +35,11 @@ jobs:
       shell: pwsh
       
     - name: Upload test results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: test-results
         path: |
           **/*.trx
           **/coverage.json
-          **/coverage.opencover.xml 
+          **/coverage.opencover.xml
+        retention-days: 5 
