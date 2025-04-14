@@ -72,4 +72,11 @@ jobs:
           **/*.trx
           **/coverage.json
           **/coverage.cobertura.xml
-        retention-days: 5 
+        retention-days: 5
+
+    - name: Pack
+      run: dotnet pack --configuration Release --no-build
+
+    - name: Push to NuGet
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      run: dotnet nuget push "**/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate 
