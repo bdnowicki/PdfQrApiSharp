@@ -27,12 +27,17 @@ jobs:
     - name: Test with coverage
       run: |
         dotnet test --collect:"XPlat Code Coverage" --settings coverlet.runsettings --logger trx
+        Write-Host "Listing TestResults directory:"
+        Get-ChildItem -Path "tests/PdfQrApiSharp.Tests/TestResults" -Recurse
         $coverageFile = Get-ChildItem -Path "tests/PdfQrApiSharp.Tests/TestResults" -Filter "coverage.json" -Recurse | Select-Object -First 1
         if ($null -eq $coverageFile) {
           Write-Error "Coverage file not found"
           exit 1
         }
-        $coverage = (Get-Content $coverageFile.FullName | ConvertFrom-Json).summary.line
+        Write-Host "Coverage file found at: $($coverageFile.FullName)"
+        $coverageJson = Get-Content $coverageFile.FullName | ConvertFrom-Json
+        Write-Host "Coverage summary: $($coverageJson.summary | ConvertTo-Json)"
+        $coverage = $coverageJson.summary.line
         if ($coverage -lt 95) {
           Write-Error "Test coverage ($coverage%) is below the required 95% threshold"
           exit 1
