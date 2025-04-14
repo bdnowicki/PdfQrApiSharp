@@ -7,10 +7,6 @@
     <IsTestProject>true</IsTestProject>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Nullable>enable</Nullable>
-    <CollectCoverage>true</CollectCoverage>
-    <CoverletOutputFormat>cobertura</CoverletOutputFormat>
-    <CoverletOutput>./TestResults/coverage.cobertura.xml</CoverletOutput>
-    <Exclude>[xunit*]*%2c[*.Tests]*</Exclude>
   </PropertyGroup>
 
   <ItemGroup>
