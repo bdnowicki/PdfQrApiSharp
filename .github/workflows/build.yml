@@ -1,0 +1,44 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '7.0.x'
+        
+    - name: Restore dependencies
+      run: dotnet restore
+      
+    - name: Build
+      run: dotnet build --no-restore
+      
+    - name: Test with coverage
+      run: |
+        dotnet test --collect:"XPlat Code Coverage" --settings coverlet.runsettings --logger trx
+        $coverage = (Get-Content "tests/PdfQrApiSharp.Tests/coverage.json" | ConvertFrom-Json).summary.line
+        if ($coverage -lt 95) {
+          Write-Error "Test coverage ($coverage%) is below the required 95% threshold"
+          exit 1
+        }
+      shell: pwsh
+      
+    - name: Upload test results
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: |
+          **/*.trx
+          **/coverage.json
+          **/coverage.opencover.xml 
