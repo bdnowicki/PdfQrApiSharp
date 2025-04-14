@@ -6,7 +6,7 @@
     <AssemblyName>PdfQrApiSharp</AssemblyName>
     <RootNamespace>PdfQrApiSharp</RootNamespace>
     <Description>A .NET library for communicating with the PDF QR Code API. This library provides a simple interface to add QR codes to PDF documents through an API service. The API project source code is available at: https://github.com/bdnowicki/pdf_qr_api</Description>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <Authors>Bartosz Nowicki</Authors>
     <Company>PdfQrApiSharp</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

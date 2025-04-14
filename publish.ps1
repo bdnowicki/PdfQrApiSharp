@@ -7,6 +7,11 @@ param(
     [string]$Source = "https://api.nuget.org/v3/index.json"
 )
 
+# Read version from csproj file
+$csprojPath = "src/PdfQrApiSharp.csproj"
+$xml = [xml](Get-Content $csprojPath)
+$version = $xml.Project.PropertyGroup.Version
+
 # Build the project
 dotnet build src/PdfQrApiSharp.csproj -c Release
 
@@ -14,6 +19,6 @@ dotnet build src/PdfQrApiSharp.csproj -c Release
 dotnet pack src/PdfQrApiSharp.csproj -c Release
 
 # Publish the package
-dotnet nuget push "src/bin/Release/PdfQrApiSharp.1.0.0.nupkg" --api-key $ApiKey --source $Source
+dotnet nuget push "src/bin/Release/PdfQrApiSharp.$version.nupkg" --api-key $ApiKey --source $Source
 
 Write-Host "Package published successfully!" 
