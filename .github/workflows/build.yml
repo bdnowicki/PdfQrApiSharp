@@ -36,7 +36,6 @@ jobs:
         }
         Write-Host "Coverage file found at: $($coverageFile.FullName)"
         $coverageJson = Get-Content $coverageFile.FullName -Raw | ConvertFrom-Json
-        Write-Host "Raw coverage data: $($coverageJson | ConvertTo-Json -Depth 10)"
         
         # Calculate total lines and covered lines
         $totalLines = 0
